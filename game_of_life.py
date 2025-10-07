@@ -16,7 +16,7 @@ class game_of_life:
                         live_neighbors+=1
                 if copy_board[row][col]==1 and (live_neighbors<2 or live_neighbors>3):
                     board[row][col]=0
-                    if copy_board[row][col]==0 and live_neighbors==3:
+                if copy_board[row][col]==0 and live_neighbors==3:
                         board[row][col]=1
 
 board = [
